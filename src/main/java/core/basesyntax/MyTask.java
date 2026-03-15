@@ -15,7 +15,7 @@ public class MyTask extends RecursiveTask<Long> {
     protected Long compute() {
         if (finishPoint - startPoint <= 10) {
             long sum = 0;
-            for (int i = startPoint + 1; i <= finishPoint; i++) {
+            for (int i = startPoint; i < finishPoint; i++) {
                 sum += i;
             }
             return sum;
